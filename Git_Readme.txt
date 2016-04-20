@@ -99,6 +99,17 @@ $ git pull --rebase origin master
 执行上面代码后可以看到本地代码库中多了README.md文件
 此时再执行语句 git push -u origin master即可完成代码上传到github
 
+尝试增加一个新文件用以测试 Git 是否好好工作。
+结果在 Push 时却显示
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+检查文件时却发现实际上一个都没更新上去。
+再执行下面的语句：
+$ git add Git_Readme.txt
+$ git commit -m "how to use git" 【一定要重新写commit】
+$  git push -u origin master 【再执行这个语句就可以提交了】
+
+
 参考网址：
 http://www.runoob.com/git/git-tutorial.html
 http://www.bootcss.com/p/git-guide/
@@ -106,6 +117,11 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
 http://blog.csdn.net/wh_19910525/article/details/8128916【非常好的博文】
 http://www.jianshu.com/p/8d26730386f3【github上传时出现error: src refspec master does not match any解决办法】
 http://www.jianshu.com/p/835e0a48c825【如何解决failed to push some refs to git】
+
+git push 提示 Everything up-to-date的参考网址：
+http://blog.csdn.net/g1036583997/article/details/50532651
+http://blog.csdn.net/kangear/article/details/10822805 
+如果新建一个分支要切过去才能push到这个分支，不然还在master分支，就会出现这个错误。切回去后commit要重新填。之后就没有问题了。
 
 http://www.oschina.net/question/68606_238945
 问：Virtual Studio Code 如何关闭已经打开的目录？
