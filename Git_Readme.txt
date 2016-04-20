@@ -105,7 +105,7 @@ Branch master set up to track remote branch master from origin.
 Everything up-to-date
 检查文件时却发现实际上一个都没更新上去。
 再执行下面的语句：
-$ git add Git_Readme.txt 【这句不一定必要】
+$ git add Git_Readme.txt 【这句好像一定要执行】
 $ git commit -m "how to use git" 【一定要重新写commit，不知道写中文可以不，没测试，】
 
 如果commit不成功就会提示如下：
