@@ -9,7 +9,7 @@ GitHub — 学生做版本控制最讨厌的就是找服务器，配置太麻烦
 Git提交/克隆/pull/push的速度更快
 Git的绝大多数操作都可以在本地完成，不需要频繁连接服务器。
 GitHub选择的默认通信方式是SSH，所以要先在Git里面生成SHH Key，打开Git Bash在其中输入如下命令：
-$ ssh-keygen -t rsa -C "3sdfsf80@xinlang.com"
+$ ssh-keygen -t rsa -C "youremail@xxx.com"
 之后会让你选择是否对存放SSH Key的文件夹进行加密，一般都不需要的。一路回车，就OK了。
 在c盘，当前用户文件夹下，有个.ssh 文件夹，在里边 找到 id_rsa.pub文件，用记事本打开，复制其中的全部内容。
 登陆你的GitHub账户，依次点击Account Settings > SSH Public Keys > Add another public key，把id_rsa.pub中的内容拷贝进去 。
